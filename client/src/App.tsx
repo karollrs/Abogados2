@@ -6,15 +6,18 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Dashboard from "@/pages/Dashboard";
 import NotFound from "@/pages/Calllogs";
 import CallLogs from "@/pages/Calllogs";
+import Attorneys from "@/pages/Attorneys";
+
 
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Dashboard} />
-      <Route path="/leads" component={Dashboard} />
       <Route path="/calls" component={CallLogs} />
-      <Route component={NotFound} />
+      <Route path="/attorneys" component={Attorneys} />
+      <Route path="/call-logs" component={CallLogs} />
+    
     </Switch>
 
   );
